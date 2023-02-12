@@ -14,9 +14,10 @@ body{
 height: 100vh;
 }
 .container{
-display: flex;
+display: grid;
 justify-content: center;
 align-items: center;
+grid-template-columns: auto auto;
 margin: auto 0%;
 text-align: center;
 height: 100%;
@@ -122,16 +123,25 @@ font-weight: bold;
 
 /*Tablet*/
 @media screen and (max-width: 768px){
+  body{
+    background-image: url(./assets/Background.png);
+    background-size: auto;
+    background-repeat: space;
+  }
   .root{
     height: 120%;
     max-height: 150vh;
     }
   .container{
     display: grid;
-    margin: 10% 0%;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto;
+    /* margin: 10% 10%; */
   }
   .container1{
-    padding-top: 20px;
+    margin-top: 18%;
+    /* padding-top: 5%; */
     width: 430px;
     height: 520px;
     border-radius: 0px;
@@ -140,13 +150,17 @@ font-weight: bold;
     width: 430px;
     height: 520px;
     border-radius: 0px;
+    margin-bottom: 18%;
   }
   .pic-iphone{
-    max-width: 100%;
-    transform: translateY(-20%);
+    /* display: block;
+    margin: auto auto; */
+    height: 100%;
+    object-fit: cover;
+    transform: translateY(-19.4%);
   }
   .login{
-    margin-top: 5%;
+    margin-top: 11%;
     width: 70%;
   }
 }
@@ -154,14 +168,18 @@ font-weight: bold;
 @media screen and (max-width: 480px){
   .container{
     margin: 0% auto;
+    width: 430px;
     /* width: 100%; */
   }
   .container1{
+    margin-top: 0%;
+    /* margin: 0% auto; */
     width: 100%;
-    max-height: 520px;  
+    /* max-height: 520px;   */
   }
   .container2{
+    margin-bottom: 0%;
     width: 100%;
-    max-height: 520px;
+    /* max-height: 520px; */
   }
 }
