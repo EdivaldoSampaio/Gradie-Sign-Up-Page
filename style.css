@@ -140,7 +140,7 @@ font-weight: bold;
     /* margin: 10% 10%; */
   }
   .container1{
-    margin-top: 20px;
+    margin-top: 18%;
     /* padding-top: 5%; */
     width: 430px;
     height: 520px;
@@ -150,7 +150,7 @@ font-weight: bold;
     width: 430px;
     height: 520px;
     border-radius: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 18%;
   }
   .pic-iphone{
     /* display: block;
@@ -160,7 +160,7 @@ font-weight: bold;
     transform: translateY(-19.4%);
   }
   .login{
-    margin-top: 5%;
+    margin-top: 11%;
     width: 70%;
   }
 }
